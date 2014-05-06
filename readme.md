@@ -1,7 +1,7 @@
 ## Introduction
 
 This is my seed repository for any HTML 5 project I start.
-This file descripes some of the core features of the stack and should give you everything you need to know to start coding.
+This file describes some of the core features of the stack and should give you everything you need to know to start coding.
 
 Besides the core project structure, I added a couple of pages that all implement a simple a+b=c functionality in a number of different ways.
 This should give you a first hands-on example on core AngularJS concepts.
@@ -14,31 +14,30 @@ If you haven´t installed it already, grab it from http://nodejs.org
 
 ###  Optional
 
-* a decent IDE (I prefeer IntelliJ IDEA or PHPStorm)
+* a decent IDE (I prefer IntelliJ IDEA or PHPStorm)
 * a good language file editor if you´d like to go into translating your app into multiple languages. I use www.poedit.net
 
 ## Getting Started
 
-1. Clone the repository
-2. Edit the package.json file and fill in the "name" at the very top of the file (the other "tbd"s are optional)
+1) Clone the repository
+2) Edit the package.json file and fill in the "name" at the very top of the file (the other "tbd"s are optional)
    Note: This is the name of your app and might end in file paths, urls, and so on, so don´t use whitespace or characters invalid in urls.
-3. Open a elevated / sudo'ed terminal, go to the directory where this readme file lives (we´ll call it the "project dir" from now on), and run
+3) Open a elevated / sudo'ed terminal, go to the directory where this readme file lives (we´ll call it the "project dir" from now on), and run
    
 ```
 npm install && npm install -g grunt-cli
 ```
 Note: You´ll only need the elevated terminal if grunt-cli is not already installed. Otherwise, a non-priviledged terminal will do.
-
 and all dependencies will be installed.
 
-4. From a terminal at the project dir, run
+4) From a terminal at the project dir, run
 
 ```
 grunt generateIndex deploy
 ```
 If everything is set up correctly, the grunt job will run without errors and you´re now all set to start coding!
 
-## A few tips on where to go on from here...
+## A few tips on where to go from here...
 
 For development, you can go ahead and make your changes within the app/ folder.
 There is no need to run any grunt targets while working within app/, except for the index.html and translations.js files.
@@ -52,8 +51,7 @@ That makes sure you don´t miss out on any JS includes. You only need to run gru
 
 For debugging purpose it is recommend to have your IDE spawn a webserver and browser instance.
 However if you want to fire up a simple HTTP server run "grunt start".
-You may also open the app/index.html directly from your filesystem in your browser (via file:///yourpath/app/index.html) but this won´t work in all browsers,
-so just use grunt start instead.
+You may also open the app/index.html directly from your filesystem in your browser (via file:///yourpath/app/index.html) but this won´t work in all browsers, so just use grunt start instead.
 
 
 ## grunt Tasks
@@ -68,8 +66,8 @@ grunt generateIndex deploy test e2etest start
 
 ### grunt deploy magic
 
-The grunt deploy task creates a dist version out of your source files within the app folder.
-Here is a short overview of what it does exactly (check the gruntfile for details)
+The grunt deploy task creates a dist version out of your app folder.
+Here is a short overview on what it does exactly (check the gruntfile for details)
 
 Please note: By design it does not execute the grunt generateIndex task.
 I expect the dist version to behave exactly like the app version, I don´t want any other stuff to be added when I deploy (except for language file updates)
@@ -88,9 +86,7 @@ On the other hand: if you do not run grunt generateIndex at least once before gr
 
 ## Files and Folders
 
-Core Source development happens in app/
-Translation files live in po/ 
-Testcases can be found in test/
+Edit source files in app/, translations in po/, and testcases in test/.
 
 Below app/ there are
 
@@ -108,7 +104,7 @@ after grunt deploy, there are also
 * node_modules/ where npm installs it´s dependencies
 * .tmp/ just ignore, intermediate files generated during grunt deploy (e.g. combined-but-not-jet-minified CSS and JS files)
 
-### Files you shoud never edit by hand
+### Files you should never edit by hand
 
 * app/index.html - edit app/index.template.html, then run grunt generateIndex to update index.html
 * app/js/translations.js - use grunt lang to update this file based on your translations in po/ (see section 'Translations' below)
@@ -160,7 +156,7 @@ As stated before, I use www.poedit.net to generate my translations.
 
 * Grunt as Buildtool
 * AngularJS as MVC Framework (based on full jQuery, not jQLite)
-* Bootstrap (full versoin, not angular-ui.bootstrap) as UI Framework
+* Bootstrap (full version, not angular-ui.bootstrap) as UI Framework
 * LESS as CSS precompiler
 * Karma as Unit-Testcase runner
 * Protractor as End-to-End Testcase runner (based on WebDriver and Selenium)
