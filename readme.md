@@ -62,9 +62,9 @@ Run grunt (without parameters) in the project folder to see a list of all releva
 
 You can daisychain targets, e.g.
 
-'''
+```
 grunt generateIndex deploy test e2etest start
-'''
+```
 
 ### grunt deploy magic
 
