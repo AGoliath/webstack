@@ -29,8 +29,10 @@ If you haven´t installed it already, grab it from http://nodejs.org
 ```
 npm install && npm install -g grunt-cli
 ```
-Note: You´ll only need the elevated terminal if grunt-cli is not already installed. Otherwise, a non-priviledged terminal will do.
+
 and all dependencies will be installed.
+
+Note: You´ll only need the elevated terminal if grunt-cli is not already installed. Otherwise, a non-priviledged terminal will do.
 
 4) From a terminal at the project dir, run
 
