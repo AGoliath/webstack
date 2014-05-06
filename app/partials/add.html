@@ -1,0 +1,6 @@
+<!--
+While this is the simplest way to add numbers, it is much more cleaner to use a controller as in add2.html
+Note: the id attributes are only "convenience" to better address the elements in e2e  tests. You can safely remove them without affecting the app.
+For the corresponding test, see test/e2e/start.js
+ -->
+<input ng-model="n1" type="number"> + <input ng-model="n2" type="number"> =<span id="result">{{n1+n2}}</span>

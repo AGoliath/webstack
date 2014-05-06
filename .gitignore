@@ -1,0 +1,8 @@
+!.gitkeep
+node_modules
+tmp
+dist
+dist_map
+.tmp
+.DS_Store
+.idea

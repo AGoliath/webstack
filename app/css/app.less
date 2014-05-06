@@ -1,0 +1,50 @@
+@import 'bootstrap/bootstrap.less';
+
+// specific variables
+
+//override BS defaults
+
+@brand-primary: #96a9ff;
+@gray-lighter: #f6f6f6;
+
+//specific classes
+
+
+.body {
+  background-color: @gray-lighter;
+}
+
+
+//we want no gaps below the jumbotron
+.jumbotron{
+  margin-bottom: 0px;
+
+}
+.overallHeader {
+  background-color: @brand-primary;
+  height: 70px;
+}
+
+.overallFooter {
+  height: 1.2em;
+}
+
+/* make sidebar nav vertical */
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}

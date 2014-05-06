@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: simpleapp\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: André Goliath <andre.goliath@senacor.com>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: app/partials/footer.html
+msgid "... Footerlinks hierhin"
+msgstr "... Footerlinks hierhin"
+
+#: app/partials/navigation.html
+msgid "Addition mit Controller"
+msgstr "Addition mit Controller"
+
+#: app/partials/navigation.html
+msgid "Addition mit Directive"
+msgstr "Addition mit Directive"
+
+#: app/partials/navigation.html
+msgid "Addition mit Service"
+msgstr "Addition mit Service"
+
+#: app/partials/navigation.html
+msgid "Addition mit rootScope"
+msgstr "Addition mit rootScope"
+
+#: app/partials/navigation.html
+msgid "Einfache Addition"
+msgstr "Einfache Addition"
+
+#: app/partials/footer.html
+msgid "Rechtliche Dinge hierhin..."
+msgstr "Rechtliche Dinge hierhin..."
+
+#: app/partials/navigation.html app/partials/start.html
+msgid "Willkommen"
+msgstr "Willkommen"

@@ -1,0 +1,10 @@
+<!-- you could also declare the controller to use in the routes.js file, but I prefeer to keep it in the template -->
+<span ng-controller="add2">
+<input ng-model="n1" type="number"> + <input ng-model="n2" type="number" > = {{add()}}
+</span>
+
+<br >
+<small>
+    Outside of the span, add() is undefined and will simply render to empty string, see? ( {{add()}} )<br>
+    Of course, static expressions such as 2+2={{2+2}} still work.
+</small>
