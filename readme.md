@@ -20,8 +20,10 @@ If you haven´t installed it already, grab it from http://nodejs.org
 ## Getting Started
 
 1) Clone the repository
+
 2) Edit the package.json file and fill in the "name" at the very top of the file (the other "tbd"s are optional)
    Note: This is the name of your app and might end in file paths, urls, and so on, so don´t use whitespace or characters invalid in urls.
+
 3) Open a elevated / sudo'ed terminal, go to the directory where this readme file lives (we´ll call it the "project dir" from now on), and run
    
 ```
