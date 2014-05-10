@@ -6,6 +6,11 @@ This file descripes some of the core features of the stack and should give you e
 Besides the core project structure, I added a couple of pages that all implement a simple a+b=c functionality in a number of different ways.
 This should give you a first hands-on example on core AngularJS concepts.
 
+If you are new to AngularJS, you might want to clone https://github.com/AGoliath/webstack/tree/0.1
+This is the basic version of the stack
+
+The current master branch adds an example on how to interact with REST services, and uses some more advanced topics.
+
 ## Prerequisites
 
 ### Required

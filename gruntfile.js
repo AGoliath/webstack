@@ -26,7 +26,7 @@ module.exports = function (grunt) {
 
         nggettext_extract: {
             all: { files: {
-                'po/template.pot': ['app/partials/*.html', 'app/partials/**/*.html' ]
+                'po/template.pot': ['app/partials/*.html', 'app/partials/**/*.html', 'app/js/*/*.js' ]
             }   }
         },
 
@@ -127,7 +127,7 @@ module.exports = function (grunt) {
                 // DO NOT run in parallel with other tasks - blocks the execution
                 runInBackground: false
             },
-        // definition for e2e tests
+            // definition for e2e tests
             'e2e': {
                 root: 'app/',
                 host: "127.0.0.1",
@@ -190,7 +190,7 @@ module.exports = function (grunt) {
     grunt.registerTask("test", ["karma:unitsingle"]);
     grunt.registerTask("watchTests", ["karma:unit"]);
 
-    grunt.registerTask("e2etest", ["http-server:e2e","protractor:dist"]);
+    grunt.registerTask("e2etest", ["http-server:e2e", "protractor:dist"]);
 
     //http server
     grunt.registerTask("start", ['http-server:app', 'http-server:dist']);

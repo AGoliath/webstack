@@ -17,6 +17,10 @@ msgstr ""
 msgid "... Footerlinks hierhin"
 msgstr "... Footer links here..."
 
+#: app/partials/userlist.html
+msgid "Add new User with name"
+msgstr "Add new User with name"
+
 #: app/partials/navigation.html
 msgid "Addition mit Controller"
 msgstr "Addition with Controller"
@@ -34,13 +38,45 @@ msgid "Addition mit rootScope"
 msgstr "Addition with rootScope"
 
 #: app/partials/navigation.html
+msgid "Benutzerliste"
+msgstr "Userlist"
+
+#: app/partials/directives/dbpb/userlist.html
+msgid "Delete"
+msgstr "Delete"
+
+#: app/partials/directives/dbpb/userlist.html
+msgid "Details"
+msgstr "Details"
+
+#: app/js/controller/userlist.js
+msgid "Do you really want to delete ||name||?"
+msgstr "Do you really want to delete ||name||?"
+
+#: app/partials/navigation.html
 msgid "Einfache Addition"
 msgstr "Simple Addition"
+
+#: app/partials/userlist.html
+msgid "Neuer Name"
+msgstr "New name"
 
 #: app/partials/footer.html
 msgid "Rechtliche Dinge hierhin..."
 msgstr "Legal Stuff goes here"
 
+#: app/partials/userlist.html
+msgid "Speichern"
+msgstr "Save"
+
 #: app/partials/navigation.html app/partials/start.html
 msgid "Willkommen"
 msgstr "Welcome"
+
+#: app/partials/directives/dbpb/userlist.html
+msgid "id"
+msgstr "ID"
+
+#: app/partials/directives/dbpb/userlist.html
+msgid "name"
+msgstr "Name"

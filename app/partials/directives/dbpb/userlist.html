@@ -1,0 +1,20 @@
+<!-- class table-striped does not work here correctly, so well just go with ng-class-odd/even -->
+<table class="table"  ng-mouseout="onMouseOutOfTable()">
+    <tr>
+        <th translate>id</th>
+        <th translate>name</th>
+        <th ng-show="showDetailsButton"></th>
+        <th ng-show="showDeleteButton"></th>
+    </tr>
+
+    <tr ng-repeat="item in items | orderBy:'id' | filter:itemFilter"
+        ng-mouseover="onMouseOverRow(item)"
+        ng-class-odd="{'oddRow':item !== overItem, 'rowOver':item === overItem}"
+        ng-class-even="{'evenRow':item !== overItem, 'rowOver':item === overItem}"  >
+        <td >{{item.id}}</td>
+        <td  >{{item.name}}</td>
+        <td   ng-show="showDetailsButton"> <span class="btn btn-default" ng-click="detailcallback(item)" translate>Details</span></td>
+        <td  ng-show="showDeleteButton"> <span class="btn btn-danger" ng-click="deletecallback(item)" translate>Delete</span></td>
+    </tr>
+
+</table>

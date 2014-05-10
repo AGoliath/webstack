@@ -5,5 +5,7 @@
  */
 angular.module(APP_NAME, [
     'ngRoute',
+    'ngResource',
+    'ui.bootstrap',
     'gettext'
 ]);

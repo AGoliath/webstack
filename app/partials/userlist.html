@@ -1,0 +1,21 @@
+<div ng-controller="userlist">
+    <small>One userlist with details...</small>
+    <br/>
+
+    <div data-dbpb-list data-items="users" data-detailcallback="showUserDetails" data-deletecallback="deleteUser"></div>
+    <br/>
+
+
+    <div class="alert alert-info">
+        <small translate>Add new User with name</small>
+        <input type="text" ng-model="newUsername" placeholder="{{'Neuer Name' | translate}}"/>
+        <input type="button" class="btn btn-success" ng-value="'Speichern' | translate" ng-click="onAddUserClick()"/>
+    </div>
+
+    <br/>
+
+    <small>...and one without.</small>
+    <br/>
+
+    <div data-dbpb-list data-items="users"></div>
+</div>

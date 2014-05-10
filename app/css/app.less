@@ -4,7 +4,7 @@
 
 //override BS defaults
 
-@brand-primary: #96a9ff;
+@brand-primary: rgba(109, 109, 255, 0.71);
 @gray-lighter: #f6f6f6;
 
 //specific classes
@@ -29,22 +29,14 @@
   height: 1.2em;
 }
 
-/* make sidebar nav vertical */
-@media (min-width: 768px) {
-  .sidebar-nav .navbar .navbar-collapse {
-    padding: 0;
-    max-height: none;
-  }
-  .sidebar-nav .navbar ul {
-    float: none;
-    display: block;
-  }
-  .sidebar-nav .navbar li {
-    float: none;
-    display: block;
-  }
-  .sidebar-nav .navbar li a {
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
+.rowOver {
+  background-color: @brand-primary;
+}
+
+.oddRow{
+  background-color: @gray-lighter;
+}
+
+.evenRow{
+  background-color: @gray-light;
 }

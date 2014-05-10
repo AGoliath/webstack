@@ -15,6 +15,7 @@ angular.module(APP_NAME).config( function($routeProvider) {
     $routeProvider.when('/add3',  {templateUrl: 'partials/add3.html'  });
     $routeProvider.when('/add4',  {templateUrl: 'partials/add4.html'  });
     $routeProvider.when('/add5',  {templateUrl: 'partials/add5.html'  });
+    $routeProvider.when('/userlist',  {templateUrl: 'partials/userlist.html'  });
 
 
 
