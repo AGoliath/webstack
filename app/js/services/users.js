@@ -2,8 +2,11 @@
 /**
  * A simple REST consumer for our user service
  */
-angular.module(APP_NAME).factory("userService", function ($resource, $rootScope) {
+angular.module(APP_NAME).factory("userService", function ($resource, $rootScope,$http) {
     var userService = {};
+
+    // usually you'd do this in a separate login service
+    $http.defaults.headers.common["X-Auth-Token"] = "initme";
 
     var User = $resource('http://www.server.ac/rest/users/:id', {'id': "@id"});
 
@@ -15,7 +18,7 @@ angular.module(APP_NAME).factory("userService", function ($resource, $rootScope)
 
     userService.query = function (callback) {
         User.query(callback);
-    }
+    };
 
     userService.get = function (id, callback) {
         return User.get({'id': id}, callback);
